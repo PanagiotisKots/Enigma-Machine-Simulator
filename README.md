@@ -2,7 +2,8 @@
 A C-based simulation of the Enigma machine encryption
 
 
-The Enigma machine is one of the most famous encryption devices in history, primarily due to its use by Nazi Germany during World War II and the subsequent efforts by Allied cryptanalysts to break its codes. Here is a detailed overview of the history of the Enigma machine:
+The Enigma machine is one of the most famous encryption devices in history, primarily due to its use by Nazi Germany during World War II and the subsequent efforts by Allied cryptanalysts to break its codes. 
+
 Early Development
 
     Invention: The Enigma machine was invented by German engineer Arthur Scherbius. He patented the design in 1918, shortly after World War I. The initial purpose was for commercial use, to protect corporate communications.
