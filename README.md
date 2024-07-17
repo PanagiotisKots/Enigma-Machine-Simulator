@@ -6,15 +6,20 @@ The Enigma machine is one of the most famous encryption devices in history, prim
 
 Early Development
 
-    Invention: The Enigma machine was invented by German engineer Arthur Scherbius. He patented the design in 1918, shortly after World War I. The initial purpose was for commercial use, to protect corporate communications.
+    Invention: The Enigma machine was invented by German engineer Arthur Scherbius. He patented the design in 1918, shortly after World War I. 
+    The initial purpose was for commercial use, to protect corporate communications.
 
-    Commercial Models: Early commercial models of the Enigma machine were marketed to banks and businesses in the 1920s. These models were not particularly successful commercially but demonstrated the potential of mechanical encryption devices.
+    Commercial Models: Early commercial models of the Enigma machine were marketed to banks and businesses in the 1920s. 
+    These models were not particularly successful commercially but demonstrated the potential of mechanical encryption devices.
 
 Military Adoption
 
-    German Military Interest: Recognizing the potential for secure communication, the German military adopted the Enigma machine in the late 1920s and early 1930s. They modified and enhanced the design to increase its security, adding features like additional rotors and a plugboard.
+    German Military Interest: Recognizing the potential for secure communication, the German military adopted the 
+    Enigma machine in the late 1920s and early 1930s. They modified and enhanced the design to increase its security, 
+    adding features like additional rotors and a plugboard.
 
-    Usage During World War II: The Enigma machine became the primary encryption device for German military communications. It was used by the Army, Navy, Air Force, and intelligence services. The machine was believed to be unbreakable due to its complex encryption methods.
+    Usage During World War II: The Enigma machine became the primary encryption device for German military communications. 
+    It was used by the Army, Navy, Air Force, and intelligence services. The machine was believed to be unbreakable due to its complex encryption methods.
 
 The Enigma Machine Design
 
