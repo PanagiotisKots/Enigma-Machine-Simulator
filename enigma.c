@@ -1,43 +1,43 @@
 #include <stdio.h>
 #include <string.h>
 
-// Define rotor wiring (example wirings)
+// Example rotor wirings for the Enigma machine
 char rotor1[26] = "EKMFLGDQVZNTOWYHXUSPAIBRCJ";
 char rotor2[26] = "AJDKSIRUXBLHWTMCQGZNPYFVOE";
 char rotor3[26] = "BDFHJLCPRTXVZNYEIWGAKMUSQO";
 
-// Define reflector wiring (example wiring)
+// Example reflector wiring
 char reflector[26] = "YRUHQSLDPXNGOKMIEBFZCWVJAT";
 
-// Function to encrypt a character through a single rotor
+// Encrypt a character through one rotor, considering its offset
 char encryptThroughRotor(char input, char* rotor, int offset) {
-    int pos = (input - 'A' + offset) % 26; // Calculate the position considering the rotor offset
-    return rotor[pos]; // Return the encrypted character
+    int pos = (input - 'A' + offset) % 26; // Find the rotor position with the offset
+    return rotor[pos]; // Return the corresponding encrypted character
 }
 
-// Function to encrypt a character through the reflector
+// Reflect a character using the reflector
 char reflect(char input) {
     return reflector[input - 'A']; // Reflect the character using the reflector wiring
 }
 
-// Function to find the index of a character in a rotor
+// Find the position of a character in the rotor
 int findIndexInRotor(char character, char* rotor) {
     int i;
     for (i = 0; i < 26; i++) {
         if (rotor[i] == character) {
-            return i; // Return the index of the character in the rotor
+            return i; // Return the index of the character
         }
     }
-    return -1; // Should never happen
+    return -1; // Should never happen in valid input
 }
 
-// Function to encrypt a character through the entire Enigma machine
+// Encrypt a single character through the entire Enigma machine
 char encryptCharacter(char input, int* rotorPositions) {
-    // Print the current state before encryption
+    // Display the character and rotor positions before encryption
     printf("\nEncrypting character: %c\n", input);
     printf("Initial Rotor Positions: [%d, %d, %d]\n", rotorPositions[0], rotorPositions[1], rotorPositions[2]);
 
-    // Forward pass through rotors
+    // Pass through each rotor in sequence
     char step1 = encryptThroughRotor(input, rotor1, rotorPositions[0]);
     printf("After Rotor 1 (position %d): %c\n", rotorPositions[0], step1);
     
@@ -47,11 +47,11 @@ char encryptCharacter(char input, int* rotorPositions) {
     char step3 = encryptThroughRotor(step2, rotor3, rotorPositions[2]);
     printf("After Rotor 3 (position %d): %c\n", rotorPositions[2], step3);
 
-    // Reflect
+    // Reflect the character
     char reflected = reflect(step3);
     printf("After Reflector: %c\n", reflected);
 
-    // Backward pass through rotors (reverse direction)
+    // Pass back through the rotors in reverse order
     int backStep3 = findIndexInRotor(reflected, rotor3);
     char backStep2 = 'A' + (backStep3 - rotorPositions[2] + 26) % 26;
     printf("Back through Rotor 3: %c\n", backStep2);
@@ -64,10 +64,10 @@ char encryptCharacter(char input, int* rotorPositions) {
     char finalChar = 'A' + (backStep1Index - rotorPositions[0] + 26) % 26;
     printf("Back through Rotor 1: %c\n", finalChar);
 
-    // Print the final encrypted character
+    // Display the final encrypted character
     printf("Encrypted character: %c\n", finalChar);
 
-    // Advance the rotors (simplified stepping mechanism)
+    // Advance the rotors (basic stepping mechanism)
     rotorPositions[0] = (rotorPositions[0] + 1) % 26;
     if (rotorPositions[0] == 0) {
         rotorPositions[1] = (rotorPositions[1] + 1) % 26;
@@ -76,21 +76,21 @@ char encryptCharacter(char input, int* rotorPositions) {
         }
     }
 
-    // Print the new rotor positions after stepping
+    // Display the new rotor positions after stepping
     printf("New Rotor Positions: [%d, %d, %d]\n", rotorPositions[0], rotorPositions[1], rotorPositions[2]);
 
     return finalChar;
 }
 
-// Main function to encrypt a message
+// Encrypt an entire message
 void encryptMessage(char* message, char* encryptedMessage, int* rotorPositions) {
     int len = strlen(message);
     int i;
     for (i = 0; i < len; i++) {
-        if (message[i] >= 'A' && message[i] <= 'Z') {
+        if (message[i] >= 'A' && message[i] <= 'Z') { // Encrypt only uppercase letters
             encryptedMessage[i] = encryptCharacter(message[i], rotorPositions);
         } else {
-            encryptedMessage[i] = message[i]; // Non-alphabet characters remain unchanged
+            encryptedMessage[i] = message[i]; // Keep non-uppercase characters unchanged
         }
     }
     encryptedMessage[len] = '\0'; // Null-terminate the encrypted message
@@ -99,8 +99,7 @@ void encryptMessage(char* message, char* encryptedMessage, int* rotorPositions) 
 int main() {
     char message[] = "HELLO ENIGMA";
     char encryptedMessage[100];
-    int rotorPositions[] = {0, 0, 0}; // Initial rotor positions
-    int i;
+    int rotorPositions[] = {0, 0, 0}; // Starting positions for the rotors
 
     printf("Original Message: %s\n", message);
     encryptMessage(message, encryptedMessage, rotorPositions);
@@ -108,4 +107,3 @@ int main() {
 
     return 0;
 }
-
