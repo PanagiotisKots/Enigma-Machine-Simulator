@@ -66,7 +66,7 @@ Navigate to the project directory:
 
 
 
-cd EnigmaMachineSimulator
+cd <Project_Directory>
 
 Compile the code:
 
