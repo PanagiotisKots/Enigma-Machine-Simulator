@@ -60,7 +60,7 @@ Installation
 
     
 
-git clone https://github.com/yourusername/EnigmaMachineSimulator.git
+git clone https://github.com/PanagiotisKots/Enigma-Machine-Simulator.git
 
 Navigate to the project directory:
 
