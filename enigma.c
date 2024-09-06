@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <ctype.h>
 
 // Example rotor wirings for the Enigma machine
 char rotor1[26] = "EKMFLGDQVZNTOWYHXUSPAIBRCJ";
@@ -82,6 +83,12 @@ char encryptCharacter(char input, int* rotorPositions) {
     return finalChar;
 }
 
+// Decrypt a single character through the entire Enigma machine
+char decryptCharacter(char input, int* rotorPositions) {
+    // Decryption is the same as encryption with the same rotor settings
+    return encryptCharacter(input, rotorPositions);
+}
+
 // Encrypt an entire message
 void encryptMessage(char* message, char* encryptedMessage, int* rotorPositions) {
     int len = strlen(message);
@@ -96,14 +103,57 @@ void encryptMessage(char* message, char* encryptedMessage, int* rotorPositions) 
     encryptedMessage[len] = '\0'; // Null-terminate the encrypted message
 }
 
+// Decrypt an entire message
+void decryptMessage(char* encryptedMessage, char* decryptedMessage, int* rotorPositions) {
+    int len = strlen(encryptedMessage);
+    int i;
+    for (i = 0; i < len; i++) {
+        if (encryptedMessage[i] >= 'A' && encryptedMessage[i] <= 'Z') { // Decrypt only uppercase letters
+            decryptedMessage[i] = decryptCharacter(encryptedMessage[i], rotorPositions);
+        } else {
+            decryptedMessage[i] = encryptedMessage[i]; // Keep non-uppercase characters unchanged
+        }
+    }
+    decryptedMessage[len] = '\0'; // Null-terminate the decrypted message
+}
+
 int main() {
-    char message[] = "HELLO ENIGMA";
+    char message[100];
     char encryptedMessage[100];
+    char decryptedMessage[100];
     int rotorPositions[] = {0, 0, 0}; // Starting positions for the rotors
 
-    printf("Original Message: %s\n", message);
+    // Prompt user for input
+    printf("Enter the message to encrypt (uppercase letters only): ");
+    fgets(message, sizeof(message), stdin);
+    
+    // Remove newline character if present
+    size_t len = strlen(message);
+    if (len > 0 && message[len - 1] == '\n') {
+        message[len - 1] = '\0';
+    }
+
+    // Convert message to uppercase
+    for (int i = 0; message[i]; i++) {
+        message[i] = toupper((unsigned char)message[i]);
+    }
+
+    printf("\n---Encryption Process---\n");
     encryptMessage(message, encryptedMessage, rotorPositions);
+
+    // Reset rotor positions for decryption
+    rotorPositions[0] = 0;
+    rotorPositions[1] = 0;
+    rotorPositions[2] = 0;
+
+    printf("\n---Decryption Process---\n");
+    decryptMessage(encryptedMessage, decryptedMessage, rotorPositions);
+
+    // Print the results
+    printf("\n---Summary---\n");
+    printf("Original Message: %s\n", message);
     printf("Encrypted Message: %s\n", encryptedMessage);
+    printf("Decrypted Message: %s\n", decryptedMessage);
 
     return 0;
 }
