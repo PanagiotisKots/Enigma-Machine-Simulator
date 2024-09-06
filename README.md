@@ -236,3 +236,11 @@ This version is concise and focused on the technical aspects of your project, om
 | 🔁 **Reflector (Umkehrwalze)** | ![Reflector](https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Enigma_insides.agr.jpg/220px-Enigma_insides.agr.jpg)              | The reflector that sends the electrical signal back through the rotors.                         |
 
 
+
+
+![Enigma Machine](https://example.com/enigma-machine.jpg)
+![Enigma Machine](https://example.com/enigma-machine.jpg)
+![Enigma Machine](https://example.com/enigma-machine.jpg)
+![Enigma Machine](https://example.com/enigma-machine.jpg)
+![Enigma Machine](https://example.com/enigma-machine.jpg)
+![Enigma Machine](https://example.com/enigma-machine.jpg)
