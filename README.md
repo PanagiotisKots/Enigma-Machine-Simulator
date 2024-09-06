@@ -238,9 +238,4 @@ This version is concise and focused on the technical aspects of your project, om
 
 
 
-![Reflector](https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Enigma_insides.agr.jpg/220px-Enigma_insides.agr.jpg)   
-![Reflector](https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Enigma_insides.agr.jpg/220px-Enigma_insides.agr.jpg)   
-![Reflector](https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Enigma_insides.agr.jpg/220px-Enigma_insides.agr.jpg)   
-![Reflector](https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Enigma_insides.agr.jpg/220px-Enigma_insides.agr.jpg)   
-![Reflector](https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Enigma_insides.agr.jpg/220px-Enigma_insides.agr.jpg)   
-![Reflector](https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Enigma_insides.agr.jpg/220px-Enigma_insides.agr.jpg)   
+![Reflector](https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Enigma_insides.agr.jpg/220px-Enigma_insides.agr.jpg)   ![Reflector](https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Enigma_insides.agr.jpg/220px-Enigma_insides.agr.jpg)   ![Reflector](https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Enigma_insides.agr.jpg/220px-Enigma_insides.agr.jpg)   ![Reflector](https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Enigma_insides.agr.jpg/220px-Enigma_insides.agr.jpg)   ![Reflector](https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Enigma_insides.agr.jpg/220px-Enigma_insides.agr.jpg)   ![Reflector](https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Enigma_insides.agr.jpg/220px-Enigma_insides.agr.jpg)   
