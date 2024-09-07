@@ -117,7 +117,7 @@ The **Enigma machine** remains a monumental feat of encryption technology and a 
 
 
 
-# 🛡️ Enigma Machine Simulator
+# The Programm
 
 A **C-based simulation** of the historic Enigma machine, demonstrating the encryption process used in this iconic ciphering device. The simulator replicates the step-by-step mechanics of the original machine, allowing users to follow each encryption stage in detail.
 
