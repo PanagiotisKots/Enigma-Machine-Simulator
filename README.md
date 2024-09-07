@@ -231,32 +231,5 @@ Upon running, the program will guide you through the encryption process, outputt
 
 
 
-## Image Gallery
-
-Explore the visual aspects of the Enigma machine simulator project through the following images. Each image highlights a different part of the project, from the overall setup to detailed views of the code and components.
-
-
-![Project Overview](img/1.jpg)
-
-
-
-![Code in Action](img/2.jpg)
-
-
-
-![Components](img/3.jpg)
-
-
-
-![Encryption Process](img/3.jpg)
-
-
-
-![Rotor Mechanism](img/3.jpg)
-
-
-
-![Reflector and Plugboard](img/3.jpg)
-
 
 
