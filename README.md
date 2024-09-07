@@ -145,7 +145,7 @@ Compile the code:
 
 
 
-    gcc -o enigma enigma.c
+    gcc -o enigma Enigma.c
 
 🚀 Usage
 
@@ -153,7 +153,7 @@ To run the Enigma machine simulation:
 
 
 
-./enigma
+./enigma.exe
 
 The program will prompt you to enter a message, after which it will display a step-by-step encryption process and the final encrypted message.
 ⚙️ How It Works
