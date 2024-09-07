@@ -132,18 +132,18 @@ A **C-based simulation** of the historic Enigma machine, demonstrating the encry
 
 1. **Clone the repository**:
 
-   ```bash
+
    git clone https://github.com/PanagiotisKots/Enigma-Machine-Simulator.git
 
     Navigate to the project directory:
 
-    bash
+
 
 cd Enigma-Machine-Simulator
 
 Compile the code:
 
-bash
+
 
     gcc -o enigma enigma.c
 
@@ -151,7 +151,7 @@ bash
 
 To run the Enigma machine simulation:
 
-bash
+
 
 ./enigma
 
@@ -174,7 +174,6 @@ Example Encryption Output
 
 The program prints out detailed steps for each character's encryption:
 
-plaintext
 
 Encrypting character: A
 Initial Rotor Positions: [0, 0, 0]
@@ -195,20 +194,10 @@ The rotor stepping mechanism advances the rotors after each key press, creating 
 You can easily customize the rotor configurations and starting positions by modifying the code, making it possible to explore different encryption patterns and behaviors.
 📄 Example Command
 
-bash
 
 ./enigma
 
 Upon running, the program will guide you through the encryption process, outputting the intermediate states and the final encrypted message for any input text.
-
-csharp
-
-
-This version is concise and focused on the technical aspects of your project, omitting any historical context while detailing the features, components, and usage of your Enigma Machine Simulator.
-
-
-
-
 
 
 
