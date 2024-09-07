@@ -192,7 +192,7 @@ The rotor stepping mechanism advances the rotors after each key press, creating 
 🧠 Customization
 
 You can easily customize the rotor configurations and starting positions by modifying the code, making it possible to explore different encryption patterns and behaviors.
-📄 Example Command
+
 
 
 
