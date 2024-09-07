@@ -195,10 +195,6 @@ You can easily customize the rotor configurations and starting positions by modi
 📄 Example Command
 
 
-./enigma
-
-Upon running, the program will guide you through the encryption process, outputting the intermediate states and the final encrypted message for any input text.
-
 
 
 
