@@ -227,9 +227,6 @@ Upon running, the program will guide you through the encryption process, outputt
 
 
 
-![Reflector](https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Enigma_insides.agr.jpg/220px-Enigma_insides.agr.jpg)   ![Reflector](https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Enigma_insides.agr.jpg/220px-Enigma_insides.agr.jpg)   ![Reflector](https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Enigma_insides.agr.jpg/220px-Enigma_insides.agr.jpg)   ![Reflector](https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Enigma_insides.agr.jpg/220px-Enigma_insides.agr.jpg)   ![Reflector](https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Enigma_insides.agr.jpg/220px-Enigma_insides.agr.jpg)   ![Reflector](https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Enigma_insides.agr.jpg/220px-Enigma_insides.agr.jpg)   
-
-
 
 
 
